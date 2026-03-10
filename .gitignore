@@ -4,4 +4,12 @@
 *.swp
 tags
 node_modules
-__pycache__
+__pycache____pycache__/
+*.pyo
+dist/
+build/
+.env
+*.log
+coverage.xml
+htmlcov/
+.pytest_cache/
