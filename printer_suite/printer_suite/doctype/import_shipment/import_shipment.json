@@ -1,10 +1,11 @@
 {
  "actions": [],
- "autoname": "format:IMP-.YYYY.-.#####",
+ "autoname": "naming_series:",
  "creation": "2026-03-09 14:43:08.938834",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "shipment_no",
   "supplier",
   "purchase_order",
@@ -215,16 +216,24 @@
    "fieldname": "linked_landed_cost_vouchers",
    "fieldtype": "Small Text",
    "label": "Linked Landed Cost Vouchers"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "ISHP-.YYYY.-.#####",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-10 04:01:20.068808",
+ "modified": "2026-03-10 23:00:27.602154",
  "modified_by": "Administrator",
  "module": "Printer Suite",
  "name": "Import Shipment",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
