@@ -1,0 +1,248 @@
+{
+ "actions": [],
+ "autoname": "format:IMP-.YYYY.-.#####",
+ "creation": "2026-03-09 14:43:08.938834",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "shipment_no",
+  "supplier",
+  "purchase_order",
+  "column_break_6t8r",
+  "shipment_status",
+  "shipping_method",
+  "purchase_receipt",
+  "section_break_xc9y",
+  "container_no",
+  "target_warehouse",
+  "bill_of_lading",
+  "column_break_zooo",
+  "port_of_arrival",
+  "port_of_loading",
+  "landed_cost_voucher",
+  "column_break_n15u",
+  "eta",
+  "arrival_date",
+  "customs_clearance_date",
+  "shipment_cost_section",
+  "shipping_cost",
+  "customs_duty",
+  "other_charges",
+  "column_break_dyj5",
+  "vat_amount",
+  "inland_transport",
+  "total_landed_cost",
+  "total_qty",
+  "section_break_ibjn",
+  "linked_purchase_receipts",
+  "column_break_xza1",
+  "linked_landed_cost_vouchers",
+  "section_break_1a7v",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "shipment_no",
+   "fieldtype": "Data",
+   "label": "Shipment No"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "shipping_method",
+   "fieldtype": "Select",
+   "label": "Shipping Method",
+   "options": "Sea Freight\nAir Freight\nCourier\nLand Transport"
+  },
+  {
+   "fieldname": "container_no",
+   "fieldtype": "Data",
+   "label": "Container No"
+  },
+  {
+   "fieldname": "bill_of_lading",
+   "fieldtype": "Data",
+   "label": "Bill of Lading"
+  },
+  {
+   "fieldname": "column_break_zooo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "port_of_arrival",
+   "fieldtype": "Data",
+   "label": "Port of Arrival"
+  },
+  {
+   "fieldname": "eta",
+   "fieldtype": "Date",
+   "label": "ETA"
+  },
+  {
+   "fieldname": "arrival_date",
+   "fieldtype": "Date",
+   "label": "Arrival Date"
+  },
+  {
+   "fieldname": "customs_clearance_date",
+   "fieldtype": "Date",
+   "label": "Customs Clearance Date"
+  },
+  {
+   "fieldname": "shipping_cost",
+   "fieldtype": "Currency",
+   "label": "Shipping Cost"
+  },
+  {
+   "fieldname": "customs_duty",
+   "fieldtype": "Currency",
+   "label": "Customs Duty"
+  },
+  {
+   "fieldname": "vat_amount",
+   "fieldtype": "Currency",
+   "label": "VAT Amount"
+  },
+  {
+   "fieldname": "inland_transport",
+   "fieldtype": "Currency",
+   "label": "Inland Transport"
+  },
+  {
+   "fieldname": "other_charges",
+   "fieldtype": "Currency",
+   "label": "Other Charges"
+  },
+  {
+   "fieldname": "total_landed_cost",
+   "fieldtype": "Currency",
+   "label": "Total Landed Cost",
+   "options": "=Shipping Cost\n+ Customs Duty\n+ VAT Amount\n+ Inland Transport\n+ Other Charges",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ibjn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "target_warehouse",
+   "fieldtype": "Link",
+   "label": "Target Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "total_qty",
+   "fieldtype": "Float",
+   "label": "Total Qty"
+  },
+  {
+   "fieldname": "linked_purchase_receipts",
+   "fieldtype": "Small Text",
+   "label": "Linked Purchase Receipts",
+   "read_only": 1
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Import Shipment Item"
+  },
+  {
+   "fieldname": "shipment_status",
+   "fieldtype": "Select",
+   "label": "Shipment Status",
+   "options": "Draft\nBooked\nIn Transit\nArrived\nUnder Clearance\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "port_of_loading",
+   "fieldtype": "Data",
+   "label": "Port of Loading"
+  },
+  {
+   "fieldname": "shipment_cost_section",
+   "fieldtype": "Section Break",
+   "label": "Shipment Cost"
+  },
+  {
+   "fieldname": "column_break_dyj5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xza1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_1a7v",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_xc9y",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_n15u",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_6t8r",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purchase_receipt",
+   "fieldtype": "Link",
+   "label": "Purchase Receipt",
+   "options": "Purchase Receipt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "purchase_order",
+   "fieldtype": "Link",
+   "label": "Purchase Order",
+   "options": "Purchase Order"
+  },
+  {
+   "fieldname": "landed_cost_voucher",
+   "fieldtype": "Link",
+   "label": "Landed Cost Voucher",
+   "options": "Landed Cost Voucher",
+   "read_only": 1
+  },
+  {
+   "fieldname": "linked_landed_cost_vouchers",
+   "fieldtype": "Small Text",
+   "label": "Linked Landed Cost Vouchers"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-10 04:01:20.068808",
+ "modified_by": "Administrator",
+ "module": "Printer Suite",
+ "name": "Import Shipment",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

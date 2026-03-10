@@ -7,7 +7,62 @@ app_license = "mit"
 
 # Apps
 # ------------------
+# Includes in <head>
+app_include_css = []
+app_include_js = []
 
+# Fixtures to move custom fields / property setters with the app
+
+
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["module", "=", "Printer Suite"]
+        ]
+    },
+{
+        "dt": "Workspace",
+        "filters": [["module", "=", "Printer Suite"]]
+    },
+
+    {
+        "dt": "Property Setter",
+        "filters": [
+            ["module", "=", "Printer Suite"]
+        ]
+    },
+    {
+        "dt": "Client Script",
+        "filters": [
+            ["module", "=", "Printer Suite"]
+        ]
+    },
+    "Custom DocPerm"
+]
+# Attach custom JS to standard doctypes
+doctype_js = {
+    "Item": "public/js/item.js",
+    "Serial No": "public/js/serial_no.js",
+    "Purchase Receipt": "public/js/purchase_receipt.js"
+}
+
+# Doc Events
+doc_events = {
+    "Purchase Receipt": {
+        "on_submit": "printer_suite.events.purchase_receipt.on_submit"
+    },
+    "Stock Entry": {
+        "on_submit": "printer_suite.events.stock_entry.on_submit"
+    }
+}
+
+# Optional scheduler placeholder
+scheduler_events = {
+    "daily": [
+        # "printer_suite.api.daily_tasks"
+    ]
+}
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page

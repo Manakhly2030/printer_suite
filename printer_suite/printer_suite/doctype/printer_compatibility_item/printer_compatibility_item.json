@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-09 15:01:57.431748",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_type",
+  "compatible_item",
+  "qty",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "compatible_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Compatible Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Spare Part Type",
+   "options": "Spare Part Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Qty"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-10 15:13:53.882506",
+ "modified_by": "Administrator",
+ "module": "Printer Suite",
+ "name": "Printer Compatibility Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-09 14:55:49.645349",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "description",
+  "qty",
+  "uom",
+  "remarks",
+  "purchase_rate",
+  "purchase_amount",
+  "allocated_landed_cost",
+  "final_unit_cost",
+  "final_total_cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "purchase_rate",
+   "fieldtype": "Currency",
+   "label": "Purchase Rate"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "purchase_amount",
+   "fieldtype": "Currency",
+   "label": "Purchase Amount",
+   "options": "= qty \u00d7 purchase_rate"
+  },
+  {
+   "fieldname": "allocated_landed_cost",
+   "fieldtype": "Currency",
+   "label": "Allocated Landed Cost",
+   "options": "= (qty / total_qty) \u00d7 total_landed_cost"
+  },
+  {
+   "fieldname": "final_unit_cost",
+   "fieldtype": "Currency",
+   "label": "Final Unit Cost",
+   "options": "= purchase_rate + (allocated_landed_cost / qty)"
+  },
+  {
+   "fieldname": "final_total_cost",
+   "fieldtype": "Currency",
+   "label": "Final Total Cost",
+   "options": "= purchase_amount + allocated_landed_cost"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-10 02:10:36.762293",
+ "modified_by": "Administrator",
+ "module": "Printer Suite",
+ "name": "Import Shipment Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

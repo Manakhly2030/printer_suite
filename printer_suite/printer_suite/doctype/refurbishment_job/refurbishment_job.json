@@ -1,0 +1,289 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-03-09 21:27:54.070158",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series_section",
+  "naming_series",
+  "printer_item",
+  "serial_no",
+  "import_shipment",
+  "column_break_iuwx",
+  "source_warehouse",
+  "target_warehouse",
+  "ready_for_sale",
+  "section_break_kx3j",
+  "intake_date",
+  "inspection_date",
+  "completion_date",
+  "column_break_wzqh",
+  "status",
+  "initial_condition",
+  "column_break_5yil",
+  "problem_summary",
+  "section_break_4moi",
+  "column_break_ddf2",
+  "diagnosis",
+  "column_break_auky",
+  "work_performed",
+  "section_break_vc6o",
+  "technician",
+  "qc_by",
+  "qc_result",
+  "column_break_awyr",
+  "parts_cost",
+  "labor_cost",
+  "other_cost",
+  "total_refurbishment_cost",
+  "column_break_ysqn",
+  "material_issue_entry",
+  "transfer_entry",
+  "sales_invoice",
+  "amended_from",
+  "section_break_ouxb",
+  "spare_parts"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "REF-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "printer_item",
+   "fieldtype": "Link",
+   "label": "Printer Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Link",
+   "label": "Serial No",
+   "options": "Serial No"
+  },
+  {
+   "fieldname": "import_shipment",
+   "fieldtype": "Link",
+   "label": "Import Shipment",
+   "options": "Import Shipment"
+  },
+  {
+   "fieldname": "column_break_iuwx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source_warehouse",
+   "fieldtype": "Link",
+   "label": "Source Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "target_warehouse",
+   "fieldtype": "Link",
+   "label": "Target Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_kx3j",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "intake_date",
+   "fieldtype": "Date",
+   "label": "Intake Date"
+  },
+  {
+   "fieldname": "inspection_date",
+   "fieldtype": "Date",
+   "label": "Inspection Date"
+  },
+  {
+   "fieldname": "completion_date",
+   "fieldtype": "Date",
+   "label": "Completion Date"
+  },
+  {
+   "fieldname": "column_break_wzqh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "initial_condition",
+   "fieldtype": "Select",
+   "label": "Initial Condition",
+   "options": "For Refurbishment\nUsed - Excellent\nUsed - Good\nUsed - Fair\nDamaged\nFor Parts"
+  },
+  {
+   "fieldname": "column_break_5yil",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nUnder Refurbishment\nPending Inspection\nUnder Diagnosis\nAwaiting Parts\nQuality Check\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "section_break_4moi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "problem_summary",
+   "fieldtype": "Small Text",
+   "label": "Problem Summary"
+  },
+  {
+   "fieldname": "column_break_ddf2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diagnosis",
+   "fieldtype": "Text Editor",
+   "label": "Diagnosis"
+  },
+  {
+   "fieldname": "column_break_auky",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "work_performed",
+   "fieldtype": "Text Editor",
+   "label": "Work Performed"
+  },
+  {
+   "fieldname": "section_break_vc6o",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "technician",
+   "fieldtype": "Link",
+   "label": "Technician",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "qc_by",
+   "fieldtype": "Link",
+   "label": "QC By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "qc_result",
+   "fieldtype": "Select",
+   "label": "QC Result",
+   "options": "Pending\nPassed\nFailed"
+  },
+  {
+   "fieldname": "column_break_awyr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "parts_cost",
+   "fieldtype": "Currency",
+   "label": "Parts Cost"
+  },
+  {
+   "fieldname": "labor_cost",
+   "fieldtype": "Currency",
+   "label": "Labor Cost"
+  },
+  {
+   "fieldname": "other_cost",
+   "fieldtype": "Currency",
+   "label": "Other Cost"
+  },
+  {
+   "fieldname": "total_refurbishment_cost",
+   "fieldtype": "Currency",
+   "label": "Total Refurbishment Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ysqn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "material_issue_entry",
+   "fieldtype": "Link",
+   "label": "Material Issue Entry",
+   "options": "Stock Entry"
+  },
+  {
+   "fieldname": "transfer_entry",
+   "fieldtype": "Link",
+   "label": "Transfer Entry",
+   "options": "Stock Entry"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Refurbishment Job",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "spare_parts",
+   "fieldtype": "Table",
+   "label": "Spare Parts",
+   "options": "Refurbishment Job Item"
+  },
+  {
+   "fieldname": "section_break_ouxb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ready_for_sale",
+   "fieldtype": "Check",
+   "label": "Ready For Sale",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-10 01:34:25.730693",
+ "modified_by": "Administrator",
+ "module": "Printer Suite",
+ "name": "Refurbishment Job",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

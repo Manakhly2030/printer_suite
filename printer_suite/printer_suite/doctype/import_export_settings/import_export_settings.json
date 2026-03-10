@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-10 03:27:34.567561",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_info_section",
+  "company",
+  "column_break_mehm",
+  "default_import_warehouse",
+  "default_export_warehouse",
+  "accounts_section",
+  "default_shipping_account",
+  "default_customs_duty_account",
+  "default_inland_transport_account",
+  "column_break_eofb",
+  "default_other_charges_account",
+  "default_import_vat_account",
+  "capitalize_import_vat_in_inventory",
+  "section_break_doao",
+  "default_port_of_loading",
+  "default_port_of_arrival",
+  "default_freight_forwarder",
+  "column_break_xerf",
+  "default_customs_broker",
+  "default_shipping_method"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_info_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Info"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_mehm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_import_warehouse",
+   "fieldtype": "Link",
+   "label": "Default Import Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "default_export_warehouse",
+   "fieldtype": "Link",
+   "label": "Default Export Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "accounts_section",
+   "fieldtype": "Section Break",
+   "label": "Accounts"
+  },
+  {
+   "fieldname": "default_shipping_account",
+   "fieldtype": "Link",
+   "label": "Default Shipping Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "default_customs_duty_account",
+   "fieldtype": "Link",
+   "label": "Default Customs Duty Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "default_inland_transport_account",
+   "fieldtype": "Link",
+   "label": "Default Inland Transport Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_eofb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_other_charges_account",
+   "fieldtype": "Link",
+   "label": "Default Other Charges Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "default_import_vat_account",
+   "fieldtype": "Link",
+   "label": "Default Import VAT Account",
+   "options": "Account"
+  },
+  {
+   "default": "0",
+   "description": "=0  \u0648\u0644\u0627 \u064a\u0633\u0645\u0639 \u0641\u064a \u0627\u0644 landed cost VAT \u064a\u0630\u0647\u0628 \u0644\u062d\u0633\u0627\u0628 Input VAT",
+   "fieldname": "capitalize_import_vat_in_inventory",
+   "fieldtype": "Check",
+   "label": "Capitalize Import VAT in Inventory"
+  },
+  {
+   "fieldname": "section_break_doao",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "default_port_of_loading",
+   "fieldtype": "Data",
+   "label": "Default Port of Loading"
+  },
+  {
+   "fieldname": "default_port_of_arrival",
+   "fieldtype": "Data",
+   "label": "Default Port of Arrival"
+  },
+  {
+   "fieldname": "default_freight_forwarder",
+   "fieldtype": "Data",
+   "label": "Default Freight Forwarder"
+  },
+  {
+   "fieldname": "column_break_xerf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_customs_broker",
+   "fieldtype": "Data",
+   "label": "Default Customs Broker"
+  },
+  {
+   "fieldname": "default_shipping_method",
+   "fieldtype": "Select",
+   "label": "Default Shipping Method",
+   "options": "Sea Freight\nAir Freight\nCourier\nLand Transport"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-03-10 03:37:09.605916",
+ "modified_by": "Administrator",
+ "module": "Printer Suite",
+ "name": "Import Export Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
