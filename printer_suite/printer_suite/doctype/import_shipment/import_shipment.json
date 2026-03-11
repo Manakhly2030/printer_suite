@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "format:IMP-.YYYY.-.#####",
+ "autoname": "naming_series:",
  "creation": "2026-03-09 14:43:08.938834",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -41,6 +41,15 @@
   "items"
  ],
  "fields": [
+  {
+  "fieldname": "naming_series",
+  "fieldtype": "Select",
+  "label": "Series",
+  "options": "ISHP-.YYYY.-.#####",
+  "reqd": 1,
+  "hidden": 1,
+  "default": "ISHP-.YYYY.-.#####"
+},
   {
    "fieldname": "shipment_no",
    "fieldtype": "Data",
